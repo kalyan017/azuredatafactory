@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "testazuredatafactory1719"
+		},
+		"LS_ADLSconnection_accountKey": {
+			"value": ""
+		},
+		"LS_blobconnection_connectionString": {
+			"value": ""
+		},
+		"LS_sqlConnection_password": {
+			"value": ""
+		},
+		"LS_ADLSconnection_properties_typeProperties_url": {
+			"value": "https://testdatalakegen21719.dfs.core.windows.net/"
+		},
+		"LS_BlobStorageConnect_properties_typeProperties_serviceEndpoint": {
+			"value": "https://testazureblobstorage1719.blob.core.windows.net/"
+		},
+		"LS_HTTPConnection_properties_typeProperties_url": {
+			"value": "@{linkedService().BaseURL}"
+		},
+		"LS_adlsgen2_properties_typeProperties_url": {
+			"value": "https://testdatalakegen21719.dfs.core.windows.net/"
+		},
+		"LS_sqlConnection_properties_typeProperties_server": {
+			"value": "testsequelserver1719.database.windows.net"
+		},
+		"LS_sqlConnection_properties_typeProperties_database": {
+			"value": "testsequeldatabse1719"
+		},
+		"LS_sqlConnection_properties_typeProperties_userName": {
+			"value": "kalyan1719"
+		}
+	}
+}
