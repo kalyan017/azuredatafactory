@@ -1,0 +1,23 @@
+{
+	"name": "Ds_inputdata04",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_HTTPConnection",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "suresh12345/AzureDataEngineering_Batch/refs/heads/main/ecdc_data/country_response.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

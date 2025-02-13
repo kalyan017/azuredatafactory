@@ -1,0 +1,15 @@
+{
+	"name": "testazuredatafactory1719",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned,UserAssigned",
+		"principalId": "20e6f001-1eee-4d82-a6ae-74f15dd82a91",
+		"tenantId": "59118748-c19e-4e11-b2cb-94c2321d81f0",
+		"userAssignedIdentities": {
+			"/subscriptions/a34eb736-27af-4c18-882e-e948f4dab527/resourcegroups/TestRG001/providers/Microsoft.ManagedIdentity/userAssignedIdentities/testuserassignedmi1719": {
+				"clientId": "36449597-04b9-4354-920c-bd109e8b9900",
+				"principalId": "dcad2047-1037-4650-975d-d45a8eb34d5e"
+			}
+		}
+	}
+}

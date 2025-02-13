@@ -1,0 +1,42 @@
+{
+	"name": "Ds_inputdata05",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_HTTPConnection",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"BaseURL": {
+					"value": "@dataset().sourceBaseURL",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"sourceBaseURL": {
+				"type": "string",
+				"defaultValue": "https://raw.githubusercontent.com/"
+			},
+			"sourceRelativeURL": {
+				"type": "string",
+				"defaultValue": "suresh12345/AzureDataEngineering_Batch/refs/heads/main/ecdc_data/country_response.csv"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@dataset().sourceRelativeURL",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

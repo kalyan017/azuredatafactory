@@ -1,0 +1,32 @@
+{
+	"name": "Ds_inputfile08",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_BlobStorageConnect",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"sourceFiles": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().sourceFiles",
+					"type": "Expression"
+				},
+				"container": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
