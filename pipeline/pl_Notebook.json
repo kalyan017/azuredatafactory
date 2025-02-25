@@ -1,0 +1,30 @@
+{
+	"name": "pl_Notebook",
+	"properties": {
+		"activities": [
+			{
+				"name": "Notebook",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Shared/testdatabricks"
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_DatabricksLinkedService",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2025-02-25T06:59:14Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
